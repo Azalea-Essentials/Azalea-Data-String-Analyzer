@@ -57,5 +57,5 @@ type EncoderOptions = {
     SidebarProperties: Sidebar;
     Warps: Warp[];
 };
-export declare function encodeAzaleaDataString(opts: EncoderOptions): string;
+export declare function encodeLegacyDataString(opts: EncoderOptions): string;
 export {};

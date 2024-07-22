@@ -69,7 +69,7 @@ type EncoderOptions = {
     Warps: Warp[]
 }
 
-export function encodeAzaleaDataString(opts: EncoderOptions): string {
+export function encodeLegacyDataString(opts: EncoderOptions): string {
     let parts = [];
     // Separator character (per part: ;), per subpart: ,
     for(const ui of opts.NormalUIs) {

@@ -9,9 +9,9 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     return to.concat(ar || Array.prototype.slice.call(from));
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.encodeAzaleaDataString = void 0;
+exports.encodeLegacyDataString = void 0;
 var utils_1 = require("./utils");
-function encodeAzaleaDataString(opts) {
+function encodeLegacyDataString(opts) {
     var parts = [];
     // Separator character (per part: ;), per subpart: ,
     for (var _i = 0, _a = opts.NormalUIs; _i < _a.length; _i++) {
@@ -63,4 +63,4 @@ function encodeAzaleaDataString(opts) {
     parts.push(configSubparts.join(','));
     return "AZALEADATA;".concat(parts.join(';'));
 }
-exports.encodeAzaleaDataString = encodeAzaleaDataString;
+exports.encodeLegacyDataString = encodeLegacyDataString;

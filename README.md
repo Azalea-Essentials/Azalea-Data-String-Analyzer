@@ -1,7 +1,7 @@
 # Azalea-Data-String-Analyzer
-Analyze and create data strings for v0.9 based versions of Azalea. Useful for making azalea-compatible addons
+Analyze and create data strings for Azalea Legacy. Useful for making azalea legacy compatible addons or just analyzing your server configuration if you want
 
-> I need a new name for azalea v0.9 based versions, maybe send a name to me on Discord?
+> **This is not how azalea legacy stores configuration. It is designed as an intermediate between azalea configuration and leaf configuration while converting.**
 
 ## Todo
 
@@ -20,7 +20,7 @@ Analyze and create data strings for v0.9 based versions of Azalea. Useful for ma
 ### Encode data
 
 ```ts
-encodeAzaleaDataString({
+encodeLegacyDataString({
     ConfigDB: {
         chatrankformat: "hi"
     },
